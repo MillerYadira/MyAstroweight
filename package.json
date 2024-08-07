@@ -2,7 +2,7 @@
     "name": "project-js-astro-weight",
     "version": "0.1.0",
     "scripts": {
-        "start": "static -H \"{\\\"Cache-Control\\\": \\\"no-cache, must-revalidate\\\"}\"",
+        "start": "static . -H \"{\\\"Cache-Control\\\": \\\"no-cache, must-revalidate\\\"}\"",
         "test": "mocha test --exit"
     },
     "dependencies": {

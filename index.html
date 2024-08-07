@@ -3,10 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>Astro Weight Calculator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="style.css"> 
+    <h1>I'm an Astro Weight Calculator!</h1>
   </head>
   <body>
-     <!-- Write your markup here  -->
-
+    <div class="selection">
+      <div class="input">
+        <label for="user-weight">Enter your weight:</label>
+        <input id="user-weight" type="text" placeholder="Weight (lbs)" />
+      </div>
+      <div class="input">
+        <label for="planets">Select A Planet</label>
+        <select id="planets"></select>
+        <label for="include-pluto">Include Pluto?</label>
+        <input type="checkbox" id="include-pluto" checked />
+      </div>
+    </div>
+    <div id="custom-planet-section" style="display:none;">
+      <div class="name">
+        <label for="custom-planet-name">Planet Name:</label>
+        <input id="custom-planet-name" type="text" placeholder="Planet Name" />
+      </div>
+      <div class="multiplier">
+        <label for="custom-planet-multiplier">Planet Multiplier:</label>
+        <input id="custom-planet-multiplier" type="text" placeholder="Multiplier" />
+      </div>
+      <button id="add-planet-button">Add Custom Planet</button>
+    </div>
+    <p id="output"></p>
+    <button id="calculate-button">Calculate!</button>
     <script src="main.js" charset="utf-8"></script>
   </body>
 </html>
